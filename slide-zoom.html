@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://www.jungleocean.com/demo/jquery-slick/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.jungleocean.com/demo/jquery-slick/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="zoom/css/zoom.css">
+    <style>
+      img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+
+  <div class="single">
+    <img data-action="zoom" src="https://www.jungleocean.com/demo/jquery-slick/images/1.jpg" >
+    <img data-action="zoom" src="https://www.jungleocean.com/demo/jquery-slick/images/2.jpg" >
+    <img data-action="zoom" src="https://www.jungleocean.com/demo/jquery-slick/images/3.jpg" >
+    <img data-action="zoom" src="https://www.jungleocean.com/demo/jquery-slick/images/4.jpg" >
+    <img data-action="zoom" src="https://www.jungleocean.com/demo/jquery-slick/images/5.jpg" >
+    <img data-action="zoom" src="https://www.jungleocean.com/demo/jquery-slick/images/6.jpg" >
+    <img data-action="zoom" src="https://www.jungleocean.com/demo/jquery-slick/images/7.jpg" >
+    <img data-action="zoom" src="https://www.jungleocean.com/demo/jquery-slick/images/8.jpg" >
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./slick/slick.min.js"></script>
+  <script src="zoom/js/zoom.js"></script>
+  <script src="transition/src/transition.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.single').slick({
+        // autoplay: true, //自動再生
+      });
+    });
+  </script>
+  <style>
+    .single { max-width: 600px; }
+    .single img{ width: 100%;}
+  </style>
+
+  </body>
+</html>
